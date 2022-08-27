@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>MainPageServlet</servlet-name>
+        <servlet-class>Controllers.MainPageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcessLoginServlet</servlet-name>
+        <servlet-class>Controllers.ProcessLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcessLogoutServlet</servlet-name>
+        <servlet-class>Controllers.ProcessLogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowLoginServlet</servlet-name>
+        <servlet-class>Controllers.ShowLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPageServlet</servlet-name>
+        <url-pattern>/MainPageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessLoginServlet</servlet-name>
+        <url-pattern>/ProcessLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessLogoutServlet</servlet-name>
+        <url-pattern>/ProcessLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowLoginServlet</servlet-name>
+        <url-pattern>/ShowLoginServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
